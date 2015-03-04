@@ -1,19 +1,29 @@
 gviz-scatter-series
 ===================
 
-Use this template to create a custom interactive scatter chart (to visualize relationship between X-Y data), with options for multiple data series/legend and data labels in the text tooltip. It draws data from a Google Spreadsheet using Google Visualization API. Requires a free Google Drive account and text editor, and ability to modify spreadsheet and HTML templates as instructed.
+Use this template to create a custom interactive scatter chart (to visualize relationship between X-Y data), which draws data from a Google Sheet, with options for multiple data series/legend and data labels in the text tooltip pop-up. Uses Google Visualization API. 
 
-See live demo at http://jackdougherty.github.io/gviz-scatter-series/
+## Demo 
+http://jackdougherty.github.io/gviz-scatter-series/
 
-Learn more at Data Visualization with Community Partners open-access book-in-progress at http://epress.trincoll.edu/dataviz
+## Requirements:
+
+- a free Google Drive account
+- skills to modify spreadsheet and HTML templates as instructed
+- a way to host the index.html file on the web (such as free GitHub Pages account, or Google Drive host folder)
+and ability to modify spreadsheet and HTML templates as instructed.
+
+Learn more at Data Visualization book-in-progress at http://epress.trincoll.edu/dataviz
 
 Quick notes on creating your own version:
 
 1) Go to the <a href="https://docs.google.com/spreadsheet/ccc?key=0AtmGKybdRLlZdHBvSGxIdEJoc1YxNUxtTThGbU9Qcnc&usp=sharing">Google Sheet sample data template</a> and File > Make Copy to save in your own Google Drive, modify as instructed, and publish to the web.
 
-2) Download a copy of the index.HTML template file (see GitHub button to <a href="https://github.com/JackDougherty/gviz-scatter-series/archive/master.zip">"download zip"</a> or "clone in desktop") and open with text editor to modify as instructed.
+2) Download a copy of the index.HTML template file, edit as instructed in the code comments, and host on the live web.
 
-3) Host your modified HMTL file on a live website. If you do not have your own web host, learn how to <a href="https://googledrive.com/host/0B716ywBKT84AMXBENXlnYmJISlE/GoogleDriveHosting.html">host webpages on Google Drive for free</a> and upload the modified HTML file and your Google Sheet data to the same public Google Drive folder.
+Two options to edit and host file on the live web:
+- If you have a free GitHub account, you can "fork" (aka copy) my repository to your account, delete my "gh-pages" branch,  create your own "gh-pages" branch, and edit the index.html file to host on the web.
+- Or learn how to freely <a href="https://googledrive.com/host/0B716ywBKT84AMXBENXlnYmJISlE/GoogleDriveHosting.html">host webpages on Google Drive</a>. Click this GitHub repository "download" button to obtain a zip file of the index.html page and upload to your Google Drive public host folder (or copy and paste its contents into your own index.html file). Edit as instructed in the code comments and make public on the live web.  
 
 Learn more about Visualizations at Google Code Playground 
 https://code.google.com/apis/ajax/playground/
