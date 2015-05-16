@@ -51,21 +51,20 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
       // Modify legend labels via Y-series column headers in Google Sheet.
       // See more ScatterChart options at 
       // https://developers.google.com/chart/interactive/docs/gallery/scatterchart
-      var options = {title: 'click points or float over cursor to view data labels', 
+      var options = {title: 'click points or float over cursor to view data values', 
           titleTextStyle: {fontSize: 14, italic: true},
-          vAxis: {title: "Equality <-----------------------> Liberty", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}},
-          hAxis: {title: "Community <-----------------------> Efficiency", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}}, 
-          legend:'right',colors: ["red","blue"]}
+          vAxis: {title: "Equality <-----------------------------> Liberty", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}},
+          hAxis: {title: "Community <----------------------------> Efficiency", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}}, 
+          legend:'right',colors: ["red","blue"], fontSize: 12}
       chart.draw(data, options);
     }
     </script>
   </head>
   <body style="font-family: Arial;border: 0 none;">
     Here are your custom Values Tension Explorer Results! <br>
-    <i>(please save a copy for your reference, results will not be saved online.)</i>
+    <i>(please save a copy of this chart for your reference, your results will not be saved online.)</i>
       <!-- This div will hold the chart. Modify your own text and links -->
     <div id="chart" style="height: 600px; width: 600px;"></div>
-    Data source: (insert, with optional <a href="https://docs.google.com/spreadsheet/ccc?key=1I7n38z_YCsi0_Aky67GzHbYPQXS1Rr0V-KEcEJGu-2c" target="_blank">link to Google Sheet</a></br>
-    Chart created with Google Visualization API, with guide at</br><a href="https://github.com/TheOrv/gviz-scatter-series" target="_blank">https://github.com/TheOrv/gviz-scatter-series</a>
+    
   </body>
 </html>
