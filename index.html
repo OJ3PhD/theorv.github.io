@@ -55,8 +55,8 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
       // Set data series (3 in this sample) to match your Google Sheet. 
       // Set property for each tooltip column in your GoogleSheet (first = 0)
       var data = response.getDataTable();
-      data.setColumnProperty(2, 'role', 'tooltip');
-      data.setColumnProperty(4, 'role', 'tooltip');
+      data.setColumnProperty(2, 'role', 'annotation');
+      data.setColumnProperty(4, 'role', 'annotation');
       //data.setColumnProperty(6, 'role', 'tooltip');
       chart = new google.visualization.ScatterChart(document.getElementById('chart'));
       // Insert titles, labels, font sizes, and legend/data series colors below.
