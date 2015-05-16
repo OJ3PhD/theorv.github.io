@@ -66,8 +66,8 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
       // https://developers.google.com/chart/interactive/docs/gallery/scatterchart
       var options = {title: 'click points or float over cursor to view data values', 
           titleTextStyle: {fontSize: 14, italic: true},
-          vAxis: {title: "Equality <-----------------------------> Liberty", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}},
-          hAxis: {title: "Community <----------------------------> Efficiency", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}}, 
+          vAxis: {minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}},
+          hAxis: {minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}}, 
           legend:'right',colors: ["red","blue"], fontSize: 12}
       chart.draw(data, options);
     }
