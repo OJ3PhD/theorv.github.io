@@ -28,7 +28,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
       // Adjust the cell range (e.g. A1:G7) to match data in your Google Sheet
       // In your Google Sheet, File > Publish to the Web
       var query = new google.visualization.Query(
-          'http://spreadsheets.google.com/tq?key=1eh5jzkBGyu2tjNlFKupJx4Y1zTDAAjBxEhea_ZZ_7u8&range=A1:G7&pub=1?gid=791408824&single=true');
+          'http://spreadsheets.google.com/tq?key=1eh5jzkBGyu2tjNlFKupJx4Y1zTDAAjBxEhea_ZZ_7u8&range=A1:E4&pub=1?gid=791408824&single=true');
     
       // Send the query with a callback function.
       query.send(handleQueryResponse);
@@ -44,7 +44,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
       var data = response.getDataTable();
       data.setColumnProperty(2, 'role', 'tooltip');
       data.setColumnProperty(4, 'role', 'tooltip');
-      data.setColumnProperty(6, 'role', 'tooltip');
+      //data.setColumnProperty(6, 'role', 'tooltip');
       chart = new google.visualization.ScatterChart(document.getElementById('chart'));
       // Insert titles, labels, font sizes, and legend/data series colors below.
       // If Google Sheet data is not in decimal or percent format (between 0 and 1), reset maxValue and remove format. 
@@ -55,7 +55,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
           titleTextStyle: {fontSize: 14, italic: true},
           vAxis: {title: "Equality <-----------------------> Liberty", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}},
           hAxis: {title: "Community <-----------------------> Efficiency", titleTextStyle: {fontSize: 14}, minValue: -1, maxValue: 1, format:'#', gridlines: {count:3}}, 
-          legend:'right',colors: ["red","blue", "purple"]}
+          legend:'right',colors: ["red","blue"]}
       chart.draw(data, options);
     }
     </script>
