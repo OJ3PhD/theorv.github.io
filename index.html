@@ -12,6 +12,19 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+    .chartWithOverlay {
+           position: relative;
+           width: 600px;
+    }
+    .overlay {
+           width: 100px;
+           height: 100px;
+           position: absolute;
+           top: 60px;   /* chartArea top  */
+           left: 180px; /* chartArea left */
+    }
+   </style>
     <script type="text/javascript" src="//www.google.com/jsapi"></script>
     <script type="text/javascript">
       // Load the Google Visualization API and chart package
@@ -64,7 +77,13 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
     Here are your custom Values Tension Explorer Results! <br>
     <i>(please save a copy of this chart for your reference, your results will not be saved online.)</i>
       <!-- This div will hold the chart. Modify your own text and links -->
+    <div class="chartWithOverlay">
     <div id="chart" style="height: 600px; width: 600px;"></div>
-    
+    <div class="overlay">
+   <div style="font-family:'Arial Black'; font-size: 128px;">88</div>
+   <div style="color: #b44; font-family:'Arial Black'; font-size: 32px; letter-spacing: .21em; margin-top:-45px; margin-left:5px;">zombie</div>
+   <div style="color: #444; font-family:'Arial Black'; font-size: 32px; letter-spacing: .15em; margin-top:-21px; margin-left:5px;">attacks</div>
+ </div>
+</div>
   </body>
 </html>
